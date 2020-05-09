@@ -6,6 +6,9 @@ import Link from '@material-ui/core/Link';
 import ProTip from './ProTip';
 import Checkout from './Checkout';
 import Home from './Home';
+import Time from './Timeline';
+
+import 'rsuite/dist/styles/rsuite-default.css';
 
 function Copyright() {
   return (
@@ -20,18 +23,14 @@ function Copyright() {
   );
 }
 
+
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v5-beta example
-        </Typography>
-        {/* <ProTip />*/}
-        <Checkout />
-        <Home />
-        <Copyright />
-      </Box>
+    <Container maxWidth="lg">
+      <Home />
+      <h1>Trial 0</h1>
+      <h1>Trial 3</h1>
+      <Time/>
     </Container>
   );
 }
