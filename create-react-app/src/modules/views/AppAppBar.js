@@ -50,8 +50,12 @@ function AppAppBar(props) {
             className={classes.title}
             href="/premium-themes/onepirate/"
           >
-            {'onepirate'}
+            {'Caring for Caretakers'}
           </Link>
+          <img
+            src="/static/logo.svg"
+            alt="curvy lines"
+          />
           <div className={classes.right}>
             <Link
               color="inherit"
