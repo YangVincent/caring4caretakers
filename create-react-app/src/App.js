@@ -7,21 +7,9 @@ import ProTip from './ProTip';
 import Checkout from './Checkout';
 import Home from './Home';
 import Time from './Timeline';
+import Stripe from './Stripe';
 
 import 'rsuite/dist/styles/rsuite-default.css';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 export default function App() {
   return (
@@ -30,6 +18,9 @@ export default function App() {
       <h1>Trial 0</h1>
       <h1>Trial 3</h1>
       <Time/>
+
+	  // Payment stuff
+	  <Stripe />
     </Container>
   );
 }
